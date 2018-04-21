@@ -1,0 +1,189 @@
+# # # # # # # # # #
+# DO NOT MODIFY!  #
+# # # # # # # # # #
+
+# Domeingroep Web & New Media
+# ---------------------------
+
+- id: AAD
+  name:
+    full : Ann Audenaert
+    short: A. Audenaert
+  image  : aad.jpg
+  contact:
+    email  : ann.audenaert@arteveldehs.be
+    website: http://www.gdm.gent
+  title:
+    en: lecturer
+    nl: docent
+
+- id: BM
+  name:
+    full : Bart Missant
+    short: B. Missant
+  image  : bm.jpg
+  contact:
+    email  : bart.missant@arteveldehs.be
+    website: http://www.gdm.gent
+  title:
+    en: lecturer
+    nl: docent
+
+- id: BT
+  name:
+    full : Barbara Tombeur
+    short: B. Tombeur
+  image  : bt.jpg
+  contact:
+    email  : barbara.tombeur@arteveldehs.be
+    website: http://www.gdm.gent
+  title:
+    en: lecturer
+    nl: docent
+
+- id: DDW
+  name:
+    full : Dieter De Weirdt
+    short: D. De Weirdt
+  image  : ddw.jpg
+  contact:
+    email  : dieter.deweirdt@arteveldehs.be
+    website: http://www.gdm.gent
+  title:
+    en: lecturer
+    nl: docent
+
+- id: EVR
+  name:
+    full : Evelien Rutsaert
+    short: E. Rutsaert
+  image  : evr.jpg
+  contact:
+    email  : evelien.rutsaert@arteveldehs.be
+    website: http://www.gdm.gent
+  title:
+    en: lecturer
+    nl: docent
+
+- id: FR
+  name:
+    full : Frederick Roegiers
+    short: F. Roegiers
+  image  : fr.jpg
+  contact:
+    email  : frederick.roegiers@arteveldehs.be
+    website: http://www.gdm.gent
+  title:
+    en: lecturer
+    nl: docent
+
+- id: JPT
+  name:
+    full : Jonas Pottie
+    short: J. Pottie
+  image  : jpt.jpg
+  contact:
+    email  : jonas.pottie@arteveldehs.be
+    website: http://www.gdm.gent
+  title:
+    en: lecturer
+    nl: docent
+
+- id: KR
+  name:
+    full : Kristof Raes
+    short: K. Raes
+  image  : kr.jpg
+  contact:
+    email  : kristof.raes@arteveldehs.be
+    website: http://www.gdm.gent
+  title:
+    en: lecturer
+    nl: docent
+
+- id: OPR
+  name:
+    full : Olivier Parent
+    short: O. Parent
+  image  : opr.jpg
+  contact:
+    email  : olivier.parent@arteveldehs.be
+    website: http://www.gdm.gent
+  title:
+    en: lecturer
+    nl: docent
+
+- id: PDP
+  name:
+    full : Philippe De Pauw - Waterschoot
+    short: Ph. De Pauw
+  image  : pdp.jpg
+  contact:
+    email  : philippe.depauw@arteveldehs.be
+    website: http://www.gdm.gent
+  title:
+    en: lecturer
+    nl: docent
+
+- id: SA
+  name:
+    full : Stijn Anseel
+    short: S. Anseel
+  image  : sa.jpg
+  contact:
+    email  : stijn.anseel@arteveldehs.be
+    website: http://www.gdm.gent
+  title:
+    en: lecturer
+    nl: docent
+
+# Domeingroep Graphic Design
+# --------------------------
+
+- id: CV
+  name:
+    full : Carine Vermeulen
+    short: C. Vermeulen
+  image  : cv.jpg
+  contact:
+    email  : carine.vermeulen@arteveldehs.be
+    website: http://www.gdm.gent
+  title:
+    en: lecturer
+    nl: docent
+
+- id: JB
+  name:
+    full : Jeroen Braeckman
+    short: J. Braeckman
+  image  : jb.jpg
+  contact:
+    email  : jeroen.braeckman@arteveldehs.be
+    website: http://www.gdm.gent
+  title:
+    en: lecturer
+    nl: docent
+
+- id: JDL
+  name:
+    full : Johan De Loof
+    short: J. De Loof
+  image  : jdl.jpg
+  contact:
+    email  : johan.deloof@arteveldehs.be
+    website: http://www.gdm.gent
+  title:
+    en: lecturer
+    nl: docent
+
+- id: JT
+  name:
+    full : Joris Thys
+    short: J. Thys
+  image  : jt.jpg
+  contact:
+    email  : joris.thys@arteveldehs.be
+    website: http://www.gdm.gent
+  title:
+    en: lecturer
+    nl: docent

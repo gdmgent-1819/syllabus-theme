@@ -1,0 +1,69 @@
+# # # # # # # # # #
+# DO NOT MODIFY!  #
+# # # # # # # # # #
+- id: AHS
+  name: 
+    en: Artevelde University College Ghent
+    nl: Arteveldehogeschool
+  contact:
+    facebook: https://www.facebook.com/arteveldehogeschool/
+    twitter: 
+    website: 
+      en: http://www.arteveldeuniversitycollege.be
+      nl: http://www.arteveldehogeschool.be
+  departments:
+    - id  : PBAGDM
+      name:
+        en: Bachelor of Graphical and Digital Media
+        nl: Bachelor in de grafische en digitale media
+      contact:
+        website: http://www.gdm.gent
+        facebook: https://www.facebook.com/GrafischeendigitalemediaArteveldehogeschool/
+        twitter: "@ArteveldeGDM"
+  majors:
+    - id: CMO
+      name:
+        en: Cross-media Design
+        nl: Crossmedia-ontwerp
+    - id: MMP
+      name:
+        en: Multimedia Production
+        nl: Multimediaproductie
+    - id: GMB
+      name:
+        en: Cross-media Management
+        nl: Grafimediabeleid
+  minors:
+    - id: AVD
+      name:
+        en: Audiovisual Design
+        nl: Audiovisual Design
+    - id: CM
+      name:
+        en: Cross-media
+        nl: Crossmedia
+    - id: GD
+      name:
+        en: Graphic Design
+        nl: Graphic Design
+    - id: NMD
+      name:
+        en: New Media Development
+        nl: New Media Development
+    - id: PD
+      name:
+        en: Photo Design
+        nl: Photo Design
+    - id: PM
+      name:
+        en: Print Media
+        nl: Printmedia
+  domain-groups:
+    - id: WANM
+      name:
+        en: "Web & New Media"
+        nl: "Web & New Media"
+    - id: CMO
+      name:
+        en: Cross-media Design
+        nl: Crossmedia-ontwerp

@@ -1,0 +1,35 @@
+<!-- CDN Scripts -->
+{%- if layout.scripts.body.cdn and layout.scripts.body.cdn != empty %}
+    {%- for script_src in layout.scripts.body.cdn %}
+<script crossorigin="anonymous" src="{{ script_src }}"></script>
+    {%- endfor %}
+{%- endif %}
+<!-- Libraries Scripts -->
+{%- if layout.scripts.body.libs and layout.scripts.body.libs != empty %}
+    {%- for script_src in layout.scripts.body.libs %}
+<script src="{{ script_src | relative_url }}"></script>
+    {%- endfor %}
+{%- endif %}
+<!-- Base Scripts -->
+{%- if layout.scripts.body.base and layout.scripts.body.base != empty %}
+    {%- for script_src in layout.scripts.body.base %}
+<script src="{{ script_src | relative_url }}"></script>
+    {%- endfor %}
+{%- endif %}
+<!-- Page Scripts -->
+{%- if layout.scripts.body.page and layout.scripts.body.page != empty %}
+    {%- for script_src in layout.scripts.body.page %}
+<script src="{{ script_src | relative_url }}"></script>
+    {%- endfor %}
+{%- endif %}
+<!-- Google Analytics -->
+{%- if site.google-analytics-tracking_id %}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '{{ site.tracking_id }}', 'auto');
+  ga('send', 'pageview');
+</script>
+{%- endif %}

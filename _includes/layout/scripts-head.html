@@ -1,0 +1,38 @@
+<!-- Global JavaScript Variables -->
+<script>
+  window.baseurl = '{{ site.baseurl }}';
+  window.absoluteurl = "{{ '' | absolute_url }}";
+</script>
+<!-- CDN Scripts -->
+{%- if layout.scripts.head.cdn and layout.scripts.head.cdn != empty %}
+  {%- for script-src in layout.scripts.head.cdn %}
+<script crossorigin="anonymous" src="{{ script-src }}"></script>
+  {%- endfor %}
+{%- endif %}
+<!-- Libraries Scripts -->
+{%- if layout.scripts.head.libs and layout.scripts.head.libs != empty %}
+  {%- for script-src in layout.scripts.head.libs %}
+  <script src="{{ script-src | relative_url }}"></script>
+  {%- endfor %}
+{%- endif %}
+<!-- Base Scripts -->
+{%- if layout.scripts.head.base and layout.scripts.head.base != empty %}
+  {%- for script-src in layout.scripts.head.base %}
+<script src="{{ script-src | relative_url }}"></script>
+  {%- endfor %}
+{%- endif %}
+<!-- Page Scripts -->
+{%- if layout.scripts.head.page and layout.scripts.head.page != empty %}
+  {%- for script-src in layout.scripts.head.page %}
+<script src="{{ script-src | relative_url }}"></script>
+  {%- endfor %}
+{%- endif %}
+<!-- MathJax -->
+{%- if (layout.scripts.page.mathjax == 'enabled') %}
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML"></script>
+{%- endif %}

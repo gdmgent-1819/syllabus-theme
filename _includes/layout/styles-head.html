@@ -1,0 +1,24 @@
+<!-- CDN Styles -->
+{%- if layout.styles.cdn and layout.styles.cdn != empty %}
+  {%- for style_href in layout.styles.cdn %}
+  <link rel="stylesheet" href="{{ style_href }}">
+  {%- endfor %}
+{%- endif %}
+<!-- Libraries Styles -->
+{%- if layout.styles.libs and layout.styles.libs != empty %}
+  {%- for style_href in layout.styles.libs %}
+  <link rel="stylesheet" href="{{ style_href | relative_url }}">
+  {%- endfor %}
+{%- endif %}
+<!-- Base Styles -->
+{%- if layout.styles.base and layout.styles.base != empty %}
+  {%- for style_href in layout.styles.base %}
+  <link rel="stylesheet" href="{{ style_href | relative_url }}">
+  {%- endfor %}
+{%- endif %}
+<!-- Page Styles -->
+{%- if layout.styles.page and layout.styles.page != empty %}
+  {%- for style_href in layout.styles.page %}
+  <link rel="stylesheet" href="{{ style_href | relative_url }}">
+  {%- endfor %}
+{%- endif %}

@@ -1,0 +1,59 @@
+{%- assign syllabus = site.data.syllabi | where: 'id', site.syllabus-id | first %}
+{%- assign institute = site.data.institutes | where: 'id', syllabus.programme.institute | first %}
+{%- assign department = institute.departments | where: 'id', syllabus.programme.department | first %}
+<!-- SEO -->
+{%- capture page-title %}{{ syllabus.title.long }}{% endcapture %}
+{%- capture page-subdomain %}{{ department.name | map: syllabus.lang }}{% endcapture %}
+{%- capture page-domain %}{{ institute.name | map: syllabus.lang }}{% endcapture %}
+{%- capture page-description %}Theme voor Syllabi Arteveldehogeschool{% endcapture %}
+{%- capture page-keywords %}AHS, GDM, Jekyll, Theme, SASS{% endcapture %}
+{%- capture page-author %}{{ department.name | map: syllabus.lang }}{% endcapture -%}
+{%- capture page-copyright %}{{ institute.name | map: syllabus.lang }}{% endcapture %}
+{%- if page.title %}{% capture page-title %}{{ site.title | strip_html }}{% endcapture %}{% endif %}
+{%- if page.subdomain %}{% capture page-subdomain %}{{ site.subdomain | strip_html }}{% endcapture %}{% endif %}
+{%- if page.domain %}{% capture page-domain %}{{ site.domain | strip_html }}{% endcapture %}{% endif %}
+{%- if page.description %}{% capture page-description %}{{ site.description | strip_html }}{% endcapture %}{% endif %}
+{%- if page.keywords %}{% capture page-keywords %}{{ site.keywords | strip_html }}{% endcapture %}{% endif %}
+{%- if page.author %}{% capture page-author %}{{ site.author | strip_html }}{% endcapture %}{% endif %}
+{%- if page.copyright %}{% capture page-copyright %}{{ site.copyright | strip_html }}{% endcapture %}{% endif %}
+<head>
+    <!-- Character set -->
+    <meta charset="utf-8">
+    <!-- Mobile viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="true">
+    <!-- Most important SEO tag -->
+    <title>{{ page-title }} | {{ page-subdomain }} | {{ page-domain }}</title>
+    <!-- Other SEO friendly tags -->
+    <meta name="description" content="{{ page-description }}">
+    <meta name="keywords" content="{{ page-keywords }}">
+    <meta name="author" content="{{ page-author }}">
+    <meta name="copyright" content="{{ page-copyright }}">
+    <link rel="author" type="text/plain" href="{{ 'humans.txt' | absolute_url }}">
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ pag-title }}">
+    <meta property="og:description" content="{{ page-description }}">
+    <meta property="og:url" content="{{ '' | absolute_url }}">
+    <meta property="og:site_name" content="gdm.gent">
+    <meta property="og:image" content="{{ 'assets/images/ahs.png' | absolute_url }}">
+    <meta property="og:image:width" content="129">
+    <meta property="og:image:height" content="129">
+    <!-- Prefetch -->
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//code.jquery.com">
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+    <!-- Icons generated via http://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/apple-touch-icon.png' | absolute_url }}">
+    <link rel="icon" type="image/png" href="{{ '/assets/icons/favicon-32x32.png' | absolute_url }}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ '/assets/icons/favicon-16x16.png' | absolute_url }}" sizes="16x16">
+    <link rel="manifest" href="{{ '/assets/icons/manifest.json' | absolute_url }}">
+    <link rel="mask-icon" href="{{ '/assets/icons/safari-pinned-tab.svg' | absolute_url }}" color="#ee9900">
+    <link rel="shortcut icon" href="{{ '/assets/icons/favicon.ico' | absolute_url }}">
+    <meta name="apple-mobile-web-app-title" content="GDM">
+    <meta name="application-name" content="GDM">
+    <meta name="msapplication-config" content="{{ '/assets/icons/browserconfig.xml' | absolute_url }}">
+    <meta name="theme-color" content="#ffffff">
+{% include layout/styles-head.html %}
+{% include layout/scripts-head.html %}
+</head>

@@ -1,0 +1,46 @@
+# # # # # # # # # #
+# DO NOT MODIFY!  #
+# # # # # # # # # #
+course-materials: |
+  [Adobe Creative Cloud]:                       https://www.adobe.com/be_nl/creativecloud.html
+  [Jetbrains Toolbox App]:                      https://www.jetbrains.com/toolbox/app/
+  [Microsoft Visual Studio Code]:               https://code.visualstudio.com
+  [Microsoft Visual Studio Professional 2017]:  https://visualstudio.com
+
+syllabi: |
+  [1617-CMP1]:                                  http://www.gdm.gent/1617_cmp1
+  [1617-CMP2]:                                  http://www.gdm.gent/1617_cmp2
+  [1617-CMP3]:                                  http://www.gdm.gent/1617_cmp3
+  [1617-NMDAD1]:                                http://www.gdm.gent/1617_nmdad1
+  [1617-NMDAD2]:                                http://www.gdm.gent/1617_nmdad2
+  [1617-NMDAD3]:                                http://www.gdm.gent/1617_nmdad3
+  [1617-WDAD1]:                                 http://www.gdm.gent/1617_wdad1
+  [1617-WDAD2]:                                 http://www.gdm.gent/1617_wdad2
+  [1617-WDAD3]:                                 http://www.gdm.gent/1617_wdad3
+  [1617-WEBD1]:                                 http://www.gdm.gent/1617_webd1
+  [1617-WEBD1-STDV]:                            http://www.gdm.gent/1617_webd1_stdv
+  [1617-WEBD2]:                                 http://www.gdm.gent/1617_webd2
+  [1617-WEBD2-STDV]:                            http://www.gdm.gent/1617_webd2_stdv
+  [1617-WEBD3]:                                 http://www.gdm.gent/1617_webd3
+  [1617-WEBD3-STDV]:                            http://www.gdm.gent/1617_webd3_stdv
+  [1617-WEBD4]:                                 http://www.gdm.gent/1617_webd4
+
+  [1718-CSSE]:                                  http://www.gdm.gent/1718-csse
+  [1718-CMS]:                                   http://www.gdm.gent/1718-cms
+  [1718-CMSDEV]:                                http://www.gdm.gent/1718-cmsdev
+  [1718-GD2]:                                   http://www.gdm.gent/1718-gd2
+  [1718-GD3]:                                   http://www.gdm.gent/1718-gd3
+  [1718-GD4]:                                   http://www.gdm.gent/1718-gd4
+  [1718-MOBDEV1]:                               http://www.gdm.gent/1718-mobdev1
+  [1718-MOBDEV2]:                               http://www.gdm.gent/1718-mobdev2
+  [1718-NMD1]:                                  http://www.gdm.gent/1718-nmd1
+  [1718-NMD1-STDV]:                             http://www.gdm.gent/1718-nmd1-stdv
+  [1718-NMD2]:                                  http://www.gdm.gent/1718-nmd2
+  [1718-NMD2-STDV]:                             http://www.gdm.gent/1718-nmd2-stdv
+  [1718-NMD3]:                                  http://www.gdm.gent/1718-nmd3
+  [1718-WEBDEV1]:                               http://www.gdm.gent/1718-webdev1
+  [1718-WEBDEV2]:                               http://www.gdm.gent/1718-webdev2
+  [1718-WEBTECH1]:                              http://www.gdm.gent/1718-webtech1
+  [1718-WEBTECH1-STDV]:                         http://www.gdm.gent/1718-webtech1-stdv
+  [1718-WEBTECH2]:                              http://www.gdm.gent/1718-webtech2
+  [1718-WOT]:                                   http://www.gdm.gent/1718-wot

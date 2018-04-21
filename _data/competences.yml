@@ -1,0 +1,65 @@
+# # # # # # # # # #
+# DO NOT MODIFY!  #
+# # # # # # # # # #
+- id         : ALG/005
+  description: De bachelor is in staat vraagstukken in de beroepspraktijk, waarvan het probleem op voorhand niet duidelijk is omschreven en waarop standaardprocedures niet van toepassing zijn, op een creatieve manier aan te pakken. De bachelor brengt door die creativiteit nieuwe ideeën aan.
+
+- id         : ALG/011
+  description: De bachelor is initiatiefnemer binnen een professionele context en toont ondernemerschap en doorzettingsvermogen in het uitoefenen van zijn beroep.
+
+- id         : CMO/103
+  description: De bachelor is in staat een concept te vertalen en te visualiseren naar print- en non-printmedia.
+
+- id         : CMO/104
+  description: De bachelor is in staat een ontwerp te realiseren op basis van de principes van lay-out, typografie en vormgeving.
+
+- id         : CMO/105
+  description: De bachelor is in staat beeldmateriaal op een creatieve manier te bewerken en te integreren in het ontwerp.
+
+- id         : CMO/106
+  description: De bachelor is in staat om zijn ontwerp te realiseren in functie van de technische haalbaarheid.
+
+- id         : CMO/107
+  description: De bachelor houdt bij de creatie van het ontwerp rekening met de wensen van de klant en de eigenheid van de doelgroep.
+
+- id         : CMO/201
+  description: De Bachelor kan beoordelen in welke mate een gerealiseerd drukwerk voldoet aan de vooropgestelde vormelijke en creatieve eisen van de ontwerper.
+
+- id         : GDM/101
+  description: De bachelor is bekwaam de productiestadia, de beheersprocessen en de producten van de grafische en digitale media te bepalen. Hij is in staat om op basis van deze informatie onderbouwde beslissingen te nemen.
+
+- id         : GDM/208
+  description: De bachelor is alert voor en geïnteresseerd in de dynamiek van de markt en is in staat om de ontwikkelingen binnen het vakgebied te integreren. Hij heeft daarbij een ingesteldheid tot levenslang leren.
+
+- id         : GDM/210
+  description: De bachelor kent de basisprincipes van lay-out, typografie en vormgeving en kan die toepassen.
+
+- id         : GDM/211
+  description: De bachelor is bekwaam de productiestadia, de beheersprocessen en de producten van de grafische en digitale media te bepalen. Hij is in staat om op basis van deze informatie onderbouwde beslissingen te nemen en op te volgen.
+
+- id         : GMB/105
+  description: De bachelor is bekwaam om een projectvoorstel voor een crossmediaal project (print en non-print) uit te werken, te plannen en op te volgen.
+
+- id         : GMB/107
+  description: De bachelor is bekwaam om bij de uitoefening van zijn taken rekening te houden met de technische mogelijkheden en beperkingen van de printtechnologie.
+
+- id         : GMB/108
+  description: De bachelor is bekwaam om bij de uitoefening van zijn taken rekening te houden met de mogelijkheden en beperkingen van de nieuwe mediatechnologie.
+
+- id         : GMT/102
+  description: De bachelor is bekwaam om de drukvoorbereidingsactiviteiten uit te voeren en te ondersteunen.
+
+- id         : MMP/201
+  description: De bachelor is bekwaam om een projectvoorstel voor een multimediaal project uit te werken, te plannen en op te volgen.
+
+- id         : MMP/203
+  description: De bachelor is in staat om een server met webtoepassingen op te zetten, te configureren, te beveiligen en te beheren binnen een netwerk voor webdevelopmentdoeleinden.
+
+- id         : MMP/204
+  description: De bachelor is bekwaam om van een opdracht een analyse te maken, en daaruit een technisch concept te ontwikkelen en te vertalen naar een ontwerp voor een multimediaproduct.
+
+- id         : MMP/205
+  description: De bachelor is bekwaam om een dynamische webtoepassing, mobiele toepassing en Rich Internet Application te ontwikkelen.
+
+- id         : MMP/206
+  description: De bachelor is bekwaam om een audiovisueel project uit te werken en te realiseren, van de preproductiefase tot en met de postproductiefase.

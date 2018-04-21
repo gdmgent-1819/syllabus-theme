@@ -1,0 +1,28 @@
+---
+layout: shared/base
+styles:
+  cdn : []
+  libs: []
+  base:
+    - assets/css/main.css
+scripts:
+  head:
+    cdn:
+      - https://d3js.org/d3.v4.min.js
+  body:
+    cdn:
+      - https://code.jquery.com/jquery-3.2.1.min.js
+      - https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js
+      - https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/nl.js
+      - https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/nl-be.js
+      - https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.6/lunr.min.js
+      - https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js
+    libs: []
+    base:
+      - assets/js/utilities.js
+      - assets/js/syntax-highlight.js
+---
+{%- assign syllabus = site.data.syllabi | where: 'id', site.syllabus-id | first -%}
+<div>
+    {{ content }}
+</div>
