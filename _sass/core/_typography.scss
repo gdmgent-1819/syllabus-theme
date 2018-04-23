@@ -1,0 +1,36 @@
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  direction: ltr;
+  font-synthesis: none;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga', 'kern';
+  -moz-font-feature-settings: 'liga', 'kern';
+  text-rendering: optimizeLegibility;
+  letter-spacing: -.021em;
+
+  color: $base-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+  font-size: $headings-font-size;
+  font-weight: 300;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  margin-bottom: 1.5em;
+}

@@ -1,11 +1,9 @@
-(function ($) {
+(function (window) {
     'use strict';
-    $(document).ready(whenReady);
-
-    function whenReady($) {
-        var $highlights = $('.highlight > pre > code');
-        $highlights.each(function () {
-            $(this).parents('.highlight').addClass('language-' + $(this).data('lang'));
+    const $highlights = window.document.querySelectorAll('.highlight > pre > code');
+    if ($highlights && $highlights.length > 0) {
+        $highlights.forEach( ($highlight, index) => {
+            $highlight.parentElement.parentElement.classList.add('language-' + $highlight.dataset.lang);
         });
     }
-})(jQuery);
+})(window);

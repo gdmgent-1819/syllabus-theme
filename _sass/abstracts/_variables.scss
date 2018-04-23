@@ -1,7 +1,6 @@
-/*
-Colors
--------------------------------------------------------------------------------
-*/
+// -----------------------------------------------------------------------------
+// This file contains variables
+// -----------------------------------------------------------------------------
 
 // Ahs-colors
 $ahs-blue     : #0591c6 !default;
@@ -84,3 +83,34 @@ $code-color-palette: (
   color-G: hsl(229, 30%, 50%),
   color-H: hsl(330, 50%, 50%)
 );
+
+// Grey color palette
+$mat-grey-color-palette: (
+  0 : #FFFFFF,
+  50: #FAFAFA,
+  100: #F5F5F5,
+  200: #EEEEEE,
+  300: #E0E0E0,
+  400: #BDBDBD,
+  500: #9E9E9E,
+  600: #757575,
+  700: #616161,
+  800: #424242,
+  900: #212121
+);
+
+// Colors
+$base-background-color: mat-color-palette(50, $mat-grey-color-palette);
+
+// Fonts
+$font-family-roboto: "Roboto", serif;
+$font-family-source-sans-pro: "Source Sans Pro", sans-serif;
+$font-family-code: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$base-font-family: $font-family-roboto;
+$base-font-size: 18px;
+$base-line-height: 1.52;
+$base-color: mat-color-palette(800, $mat-grey-color-palette);
+$headings-font-family: $font-family-source-sans-pro;
+$headings-font-size: 20px;
+$headings-line-height: 1.28;
+$headings-color: color-palette('ahs-blue', 'base', $ahs-color-palettes);

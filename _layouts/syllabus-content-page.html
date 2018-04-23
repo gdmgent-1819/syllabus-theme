@@ -11,10 +11,9 @@ scripts:
       - https://d3js.org/d3.v4.min.js
   body:
     cdn:
-      - https://code.jquery.com/jquery-3.2.1.min.js
-      - https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js
-      - https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/nl.js
-      - https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/nl-be.js
+      - https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js
+      - https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/locale/nl.js
+      - https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/locale/nl-be.js
       - https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.6/lunr.min.js
       - https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js
     libs: []
@@ -23,6 +22,22 @@ scripts:
       - assets/js/syntax-highlight.js
 ---
 {%- assign syllabus = site.data.syllabi | where: 'id', site.syllabus-id | first -%}
-<div>
-    {{ content }}
+{%- if page.title %}
+  {%- capture page-title %}{{ page.title | strip_html }}{%- endcapture %}
+{%- elsif site.title %}
+  {%- capture page-title %}{{ site.title | strip_html }}{%- endcapture %}
+{%- else %}
+  {%- capture page-title %}{{ syllabus.title.long }}{%- endcapture %}
+{%- endif %}
+<div class="content__heading">
+  <h1>{{ page-title }}</h1>
+</div>
+<div class="content__body">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+          {{ content }}
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,54 @@
+// Ahs-based color palette
+@function color-palette($palette: 'ahs-blue', $tone: 'base', $palettes: $ahs-color-palettes) {
+  @return map-get(map-get($palettes, $palette), $tone);
+};
+
+// Mat-based color palette
+@function mat-color-palette($tone: '500', $palette: $mat-grey-color-palette) {
+  @return map-get($palette, $tone);
+};
+
+// Tree content
+$space-last   : "    ";
+$space-1      : "│   ";
+$end-1        : "├── ";
+$end-last     : "└── ";
+$selector-part: " > ul > li";
+@function tree-content($string) {
+  $length: str-length($string);
+  $return: '';
+  @for $i from 1 through $length {
+    $character: str-slice($string, $i, $i);
+    @if        $character == '└' {
+      $return: $return + $end-last;
+    } @else if $character == '├' {
+      $return: $return + $end-1;
+    } @else if $character == '│' {
+      $return: $return + $space-1;
+    } @else if $character == '_' {
+      $return: $return + $space-last;
+    } @else {
+      @error 'Unknown character.';
+    }
+  }
+  @return $return;
+}
+@function tree-selector($string) {
+  $length: str-length($string);
+  $return: '';
+  @for $i from 1 through $length {
+    $character: str-slice($string, $i, $i);
+    @if        $character == '└' {
+      $return: $return + $selector-part + ':last-child';
+    } @else if $character == '├' {
+      $return: $return + $selector-part;
+    } @else if $character == '│' {
+      $return: $return + $selector-part;
+    } @else if $character == '_' {
+      $return: $return + $selector-part + ':last-child';
+    } @else {
+      @error 'Unknown character.';
+    }
+  }
+  @return $return; 
+}

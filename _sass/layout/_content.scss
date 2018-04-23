@@ -1,0 +1,66 @@
+.content {
+  &__heading {
+    & h1 {
+      font-size: 3rem;
+      text-align: center;
+      text-transform: uppercase;
+
+      color: color-palette('ahs-blue', 'mid-dark', $ahs-color-palettes);
+
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    &:after {
+      background-color: #0591c6;
+      
+      content: '';
+      display: block;
+      height: 3px;
+      margin: 16px auto;
+      position: relative;
+      width: 80px;
+    }
+  }
+  &__body {
+    counter-reset: content-body-h2-counter;
+    & h2 {
+      counter-increment: content-body-h2-counter;
+      counter-reset: content-body-h3-counter;
+
+      font-size: 2.4rem;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+
+      &::before {
+        content: counter(content-body-h2-counter);
+        border-bottom: 2px solid color-palette('ahs-blue', 'mid-dark', $ahs-color-palettes);
+        display: inline-block;
+        font-size: 80%;
+        min-width: 1em;
+      }
+    }
+    & h3 {
+      counter-increment: content-body-h3-counter;
+      counter-reset: content-body-h4-counter;
+    }
+    & ul {
+      list-style-type: circle;
+      padding-left: 2em;
+      margin-bottom: 0.5em;
+    }
+    & strong {
+      color: color-palette('ahs-blue', 'mid-dark', $ahs-color-palettes);
+    }
+    & a {
+      color: color-palette('ahs-blue', 'base', $ahs-color-palettes);
+    }
+    & *:not(pre) > code{
+      background: mat-color-palette(300, $mat-grey-color-palette);
+      border-radius: .25rem;
+      color: mat-color-palette(900, $mat-grey-color-palette);
+      font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+      font-size: 80%;
+      padding: .05rem .2rem;
+    }
+  }
+}
