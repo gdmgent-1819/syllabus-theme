@@ -5,6 +5,23 @@
 # Type: DOM
 # =========
 
+# 1819 Syllabus Theme
+# ---------------------------
+- id: 1819-THEME
+  type: DOM
+  lang: nl
+  color: primary
+  title:
+    short: 1819-THEME
+    long : "Syllabus Theme"
+  academic-year: 2018-2019
+  authors: # First is owner
+    - PDP
+    - OPR
+  programme:
+    institute : AHS
+    department: PBAGDM
+
 # Domeingroep Web & New Media
 # ---------------------------
 - id: 1718-WANM

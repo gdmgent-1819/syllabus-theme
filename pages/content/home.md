@@ -9,4 +9,4 @@ keywords: html, css, javascript
 author: Philippe De Pauw - Waterschoot
 ---
 
-# HOI
+# IK BEN EEN THEME

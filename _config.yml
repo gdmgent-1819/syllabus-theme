@@ -1,0 +1,42 @@
+# Site settings
+# -------------
+baseurl: /syllabus-theme # the subpath of your site, e.g. /blog
+host   : 127.0.0.1
+port   : 4202
+
+# Course
+# ------
+syllabus-id: 1819-THEME
+
+# SEO
+# ---
+domain     : Artevelde University College Ghent
+subdomain  : Bachelor of Graphical and Digital Media
+title      : Syllabus Theme
+description: Syllabus Theme voor alle syllabi binnen het domein Web & New Media in het academiejaar 2018-19
+keywords   : HTML, CSS, JavaScript
+author     : Bachelor of Graphical and Digital Media | Artevelde University College Ghent
+copyright  : Copyright (c) 2010-2019 Artevelde University College Ghent. All Rights Reserved.
+
+# Google Services
+# ---------------
+google-analytics-tracking_id  :  "UA-18202861-3"
+
+# Where things are from Jekyll
+# ----------------------------
+# Default locations
+
+# Build settings
+# --------------
+exclude:
+  - Gemfile
+  - LICENSE
+  - README.md
+highlighter: rouge
+
+# Collections
+# -----------
+
+
+# Defaults
+# --------
