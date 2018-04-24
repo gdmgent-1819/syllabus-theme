@@ -1,4 +1,8 @@
 .content {
+  &__meta {
+    background: mat-color-palette(200, $mat-grey-color-palette);
+    color: mat-color-palette(800, $mat-grey-color-palette);
+  }
   &__heading {
     & h1 {
       font-size: 3rem;

@@ -7,6 +7,7 @@ title_long: Introductie webtechnologieën
 description: "Introductie in webtechnologieën: HTML, CSS en JavaScript"
 keywords: html, css, javascript
 author: Philippe De Pauw - Waterschoot
+last_modified_at: 2018-04-24T10:40:52Z
 ---
 
 Inleiding

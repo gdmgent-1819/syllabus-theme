@@ -19,6 +19,7 @@ scripts:
     libs: []
     base:
       - assets/js/utilities.js
+      - assets/js/content-navigation.js
       - assets/js/syntax-highlight.js
 ---
 {%- assign syllabus = site.data.syllabi | where: 'id', site.syllabus-id | first -%}
@@ -29,8 +30,32 @@ scripts:
 {%- else %}
   {%- capture page-title %}{{ syllabus.title.long }}{%- endcapture %}
 {%- endif %}
-<div class="content__heading">
-  <h1>{{ page-title }}</h1>
+{%- assign word_count = content | number_of_words %}
+{%- capture reading_duration %}{{ word_count | divided_by: site.reading-words_per_minute }}{% endcapture %}
+<div class="content__header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="content__heading">
+          <h1>{{ page-title }}</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="row content__meta">
+          <div class="content-navigation">
+              
+          </div>
+          <div class="reading">
+            <i class="fas fa-clock"></i>
+            <span class="reading__time">{{ reading_duration }} min</span>
+            <span class="reading__word-count">({{ word_count }} woorden)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="content__body">
   <div class="container">
