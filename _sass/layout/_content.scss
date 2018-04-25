@@ -46,6 +46,26 @@
     & h3 {
       counter-increment: content-body-h3-counter;
       counter-reset: content-body-h4-counter;
+
+      &::before {
+        content: counter(content-body-h2-counter) "." counter(content-body-h3-counter);
+        border-bottom: 2px solid color-palette('ahs-blue', 'mid-dark', $ahs-color-palettes);
+        display: inline-block;
+        font-size: 80%;
+        min-width: 1em;
+      }
+    }
+    & h4 {
+      counter-increment: content-body-h4-counter;
+      counter-reset: content-body-h5-counter;
+
+      &::before {
+        content: counter(content-body-h2-counter) "." counter(content-body-h3-counter) "." counter(content-body-h4-counter);
+        border-bottom: 2px solid color-palette('ahs-blue', 'mid-dark', $ahs-color-palettes);
+        display: inline-block;
+        font-size: 80%;
+        min-width: 1em;
+      }
     }
     & ul {
       list-style-type: circle;
@@ -71,13 +91,13 @@
     ol li {display:block;} /* hide original list counter */
     ol > li:first-child {counter-reset: item;} /* reset counter */
     ol > li {counter-increment: item; position: relative;} /* increment counter */
-    ol > li:before {content:counters(item, ".") "";} /* print counter */
+    ol > li:before {content:counters(item, ".") "";margin-right:1em;} /* print counter */
     &-list {
 
     }
     &-item {
-      & > ul {
-        margin-left: 1em;
+      & > ol {
+        padding-left: 1em;
       }
     }
   }
